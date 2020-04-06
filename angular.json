@@ -120,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ns-demo"
+    }
+  },
+  "defaultProject": "ns-demo",
+  "cli": {
+    "defaultCollection": "@nativescript/schematics"
+  }
 }
