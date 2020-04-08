@@ -1,0 +1,17 @@
+<GridLayout>
+    <Label text="Test"></Label>
+    <ListView [items]="items" (itemTap)="onItemTap($event)">
+        <ng-template let-item="item" let-i="index" let-odd="odd" let-even="even">
+            <StackLayout [class.odd]="odd" [class.even]="even">
+                <Label [text]='item.id'></Label>
+                <Label [text]='item.status'></Label>
+                <Label [text]='item.descr.code.codes'></Label>
+                <Label [text]='item.loc.address'></Label>
+                <Label [text]='"Latitude: " + item.loc.lat'></Label>
+                <Label [text]='"Longitude: " +item.loc.long'></Label>
+                <Label [text]='"Progress.total: " +item.progress.total'></Label>
+            </StackLayout>
+        </ng-template>
+
+    </ListView>
+</GridLayout>
