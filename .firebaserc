@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "ns-demo-4dd52": {
+      "hosting": {
+        "ns-demo": [
+          "ns-demo-4dd52"
+        ]
+      }
+    }
+  }
+}
