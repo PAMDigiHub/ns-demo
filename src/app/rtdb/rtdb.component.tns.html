@@ -1,10 +1,10 @@
 <!-- single template -->
-<!-- <GridLayout>
+<GridLayout>
     <Label text="Test"></Label>
-    <ListView [items]="items" (itemTap)="onItemTap($event)">
-        <ng-template let-item="item" let-i="index" let-odd="odd" let-even="even"> -->
-<!-- The item template can only have a single root view container (e.g. GridLayout, StackLayout, etc.)-->
-<!-- <StackLayout [class.odd]="odd" [class.even]="even">
+    <ListView [items]="calls" (itemTap)="onItemTap($event)">
+        <ng-template let-item="item" let-i="index" let-odd="odd" let-even="even">
+            <!-- The item template can only have a single root view container (e.g. GridLayout, StackLayout, etc.)-->
+            <StackLayout [class.odd]="odd" [class.even]="even">
                 <Label [text]='item.id'></Label>
                 <Label [text]='item.status'></Label>
                 <Label [text]='item.descr.code.codes'></Label>
@@ -16,22 +16,23 @@
         </ng-template>
 
     </ListView>
-</GridLayout> -->
+</GridLayout>
+
 <!-- multiple templates -->
-<GridLayout>
+<!-- <GridLayout>
     <Label text="Test"></Label>
     <ListView [items]="items" (itemTap)="onItemTap($event)" [itemTemplateSelector]="templateSelector">
-        <ng-template let-item="item" let-i="index" let-odd="odd" let-even="even">
-            <!-- The item template can only have a single root view container (e.g. GridLayout, StackLayout, etc.)-->
-            <StackLayout [class.odd]="odd" [class.even]="even">
+        <ng-template let-item="item" let-i="index" let-odd="odd" let-even="even"> -->
+<!-- The item template can only have a single root view container (e.g. GridLayout, StackLayout, etc.)-->
+<!-- <StackLayout [class.odd]="odd" [class.even]="even">
                 <Label [text]='item.id'></Label>
                 <Label [text]='item.status'></Label>
                 <Label [text]='item.descr.code.codes'></Label>
             </StackLayout>
         </ng-template>
-        <ng-template let-item="item" let-i="index" let-odd="odd" let-even="even">
-            <!-- The item template can only have a single root view container (e.g. GridLayout, StackLayout, etc.)-->
-            <StackLayout [class.odd]="odd" [class.even]="even">
+        <ng-template let-item="item" let-i="index" let-odd="odd" let-even="even"> -->
+<!-- The item template can only have a single root view container (e.g. GridLayout, StackLayout, etc.)-->
+<!-- <StackLayout [class.odd]="odd" [class.even]="even">
                 <Label [text]='item.id'></Label>
                 <Label [text]='item.status'></Label>
                 <Label [text]='item.descr.code.codes'></Label>
@@ -39,4 +40,4 @@
         </ng-template>
 
     </ListView>
-</GridLayout>
+</GridLayout> -->
