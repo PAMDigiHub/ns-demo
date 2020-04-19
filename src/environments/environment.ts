@@ -5,14 +5,14 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: "AIzaSyCUG9jb6OUJJu0V4eQx05bcMK0oKOl1pe4",
-    authDomain: "ns-demo-4dd52.firebaseapp.com",
-    databaseURL: "https://ns-demo-4dd52.firebaseio.com",
-    projectId: "ns-demo-4dd52",
-    storageBucket: "ns-demo-4dd52.appspot.com",
-    messagingSenderId: "206323461764",
-    appId: "1:206323461764:web:c48c60e8277ebdb7825cd1",
-    measurementId: "G-DY2ZP7314E"
+    apiKey: 'AIzaSyB4fmVH0-0awB9ngzGkqQBg3S8Tos0ZahI',
+    authDomain: 'urgence-o-rama-50b21.firebaseapp.com',
+    databaseURL: 'https://urgence-o-rama-50b21.firebaseio.com',
+    projectId: 'urgence-o-rama-50b21',
+    storageBucket: 'urgence-o-rama-50b21.appspot.com',
+    messagingSenderId: '609212323363',
+    appId: '1:609212323363:web:966780bac70a86f8c74396',
+    measurementId: 'G-4FGD79PZWC'
   }
 };
 

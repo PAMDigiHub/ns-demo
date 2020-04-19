@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "206323461764",
-    "firebase_url": "https://ns-demo-4dd52.firebaseio.com",
-    "project_id": "ns-demo-4dd52",
-    "storage_bucket": "ns-demo-4dd52.appspot.com"
+    "project_number": "609212323363",
+    "firebase_url": "https://urgence-o-rama-50b21.firebaseio.com",
+    "project_id": "urgence-o-rama-50b21",
+    "storage_bucket": "urgence-o-rama-50b21.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:206323461764:android:3c03af79e1e70a8c825cd1",
+        "mobilesdk_app_id": "1:609212323363:android:4376793d3fccdb90c74396",
         "android_client_info": {
           "package_name": "org.nativescript.ngsample"
         }
       },
       "oauth_client": [
         {
-          "client_id": "206323461764-od6a1otadk1pm444mnm5tgd7vhuilh0i.apps.googleusercontent.com",
+          "client_id": "609212323363-13u3v5jakcoj6mroougkgvn9anf1u80d.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAP1wfVK8wYOBCqyKajt3fD8mOOkYlju_M"
+          "current_key": "AIzaSyA56u7UZCcQNSu8yrEj8-Hy_CwVyDhC6QE"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "206323461764-od6a1otadk1pm444mnm5tgd7vhuilh0i.apps.googleusercontent.com",
+              "client_id": "609212323363-13u3v5jakcoj6mroougkgvn9anf1u80d.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

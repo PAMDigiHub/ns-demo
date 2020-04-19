@@ -10,6 +10,8 @@ import { HomeComponent } from '@src/app/home/home.component';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { AngularFireModule } from '@angular/fire';
 import { environment } from '@src/environments/environment';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+
 
 
 
@@ -19,6 +21,7 @@ import { NativeScriptFormsModule } from 'nativescript-angular/forms';
 // Uncomment and add to NgModule imports  if you need to use the HTTP wrapper
 import { NativeScriptHttpClientModule } from 'nativescript-angular/http-client';
 import { RtdbComponent } from '@src/app/rtdb/rtdb.component';
+import { NativeScriptRouterModule } from 'nativescript-angular/router';
 
 
 // const config = {
@@ -43,6 +46,10 @@ import { RtdbComponent } from '@src/app/rtdb/rtdb.component';
   ],
   imports: [
     // Angular Fire components import
+    NativeScriptModule,
+    NativeScriptRouterModule,
+    AngularFirestoreModule,
+
     AngularFireDatabaseModule,
     AngularFireModule.initializeApp(environment.firebase),
 
