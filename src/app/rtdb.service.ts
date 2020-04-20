@@ -62,7 +62,7 @@ export class RtdbService {
      * Ajoute un listener dans Firebase qui nous permet d'écouter les changements dans la liste de Call.
      * La méthode onChildEvent sera exécutée avec comme entrée un objet représentant le changement.
      */
-    firebase.addValueEventListener(onChildEvent, 'urgence-o-rama-50b21');
+    firebase.addValueEventListener(onChildEvent, 'calls');
   }
 
 
