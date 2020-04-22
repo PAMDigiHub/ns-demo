@@ -4,6 +4,7 @@ import { AngularFireDatabase } from '@angular/fire/database';
 import { RtdbService } from '@src/app/rtdb.service';
 import { Call } from '@src/app/call.model';
 import { RouterExtensions } from 'nativescript-angular/router';
+import { ItemEventData } from 'tns-core-modules/ui/list-view/list-view';
 
 @Component({
   selector: 'app-rtdb',
@@ -21,7 +22,8 @@ export class RtdbComponent implements OnInit {
 
   //calls: Observable<Call[]>;
   constructor(
-    private rtdbservice: RtdbService
+    private rtdbservice: RtdbService,
+    private routerextension: RouterExtensions
 
   ) {
     // 8,4
@@ -38,9 +40,11 @@ export class RtdbComponent implements OnInit {
     console.log("onInit");
   }
 
-
-  // d/termine si ligne paire ou impaire
-  // templateSelector(item, index: number, items: any) {
-  //   return index % 2 === 0 ? "red" : "green";
-  // }
+  onItemTap(event: ItemEventData) {
+    /** Lorsqu'un item est selectionné par l'utilisateur, le composant listview nous retourne la position de l'item selectionné.
+     * Il faut donc récupérer le Call dans la liste, car nous avons besoin de son id pour le transmettre à la page de détail.
+     */
+    const item: Call = this.calls[event.index];
+    this.routerextension.navigate(['/rtdb-detail/', item.id]);
+  }
 }
