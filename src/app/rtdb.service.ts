@@ -15,7 +15,7 @@ export class RtdbService {
   private callSubject$: BehaviorSubject<Call[]>;
 
   constructor(
-    private firestore: AngularFireDatabase,
+    //private firestore: AngularFireDatabase,
     private ngZone: NgZone
   ) {
     /** Le BehaviorSubject sera utilisé pour émettre les Calls qui sont mis à jour par Firebase
@@ -82,14 +82,14 @@ export class RtdbService {
 
   updateCall(call: Call) {
     delete call.id;
-    this.firestore.database.ref('calls/' + call.id).update(call);
+    // this.firestore.database.ref('calls/' + call.id).update(call);
   }
 
   deleteCall(callId: string) {
     // this.firestore.doc('calls/' + callId).delete();
     console.log('deleteCall callId = ');
     console.log(callId);
-    this.firestore.list('calls').remove(callId);
+    // this.firestore.list('calls').remove(callId);
   }
 
 }
