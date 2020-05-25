@@ -1,5 +1,4 @@
 import { Injectable, NgZone } from '@angular/core';
-import { AngularFireDatabase } from '@angular/fire/database';
 import { Observable, BehaviorSubject } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { Call } from '@src/app/call.model';
@@ -81,15 +80,30 @@ export class RtdbService {
   }
 
   updateCall(call: Call) {
-    delete call.id;
+    //delete call.id;
     // this.firestore.database.ref('calls/' + call.id).update(call);
+    firebase.update(
+      '/calls',
+      { call: call }
+    );
   }
 
   deleteCall(callId: string) {
+    // en theorie aucun call n'est jamais efface, ils sont tous gardes pour archivage
+
+    // pour firestore pas rtdb
     // this.firestore.doc('calls/' + callId).delete();
-    console.log('deleteCall callId = ');
-    console.log(callId);
     // this.firestore.list('calls').remove(callId);
   }
 
+  addCall(call: Call) {
+    firebase.push(
+      'calls',
+      call
+    ).then(
+      function (result) {
+        console.log("created key: " + result.key);
+      }
+    );
+  }
 }

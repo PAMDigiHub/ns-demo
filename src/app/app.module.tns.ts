@@ -23,6 +23,8 @@ import { NativeScriptHttpClientModule } from 'nativescript-angular/http-client';
 import { RtdbComponent } from '@src/app/rtdb/rtdb.component';
 import { NativeScriptRouterModule } from 'nativescript-angular/router';
 import { RtdbDetailComponent } from '@src/app/rtdb/rtdb-detail/rtdb-detail.component';
+import { AuthenticationComponent } from '@src/app/authentication/authentication.component';
+import { MapComponent } from '@src/app/map/map.component';
 
 
 // const config = {
@@ -45,6 +47,8 @@ import { RtdbDetailComponent } from '@src/app/rtdb/rtdb-detail/rtdb-detail.compo
     HomeComponent,
     RtdbComponent,
     RtdbDetailComponent,
+    AuthenticationComponent,
+    MapComponent,
   ],
   imports: [
     // Angular Fire components import
